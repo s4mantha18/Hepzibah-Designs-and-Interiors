@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Hepzibah Designs & Interiors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header
+      class="site-header portfolio-internal-header"
+      style="background-color: var(--dark-header-bg); position: relative"
+    >
+      <a href="home.html" class="logo-container">
+        <img
+          src="img/logo.png"
+          alt="Hepzibah Designs and Interiors LTD"
+          class="logo-img"
+        />
+      </a>
+      <nav class="navbar">
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html" class="active">Portfolio</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Portfolio Showcase Section -->
+    <section class="featured-portfolio" style="padding-top: 80px">
+      <div class="portfolio-header">
+        <h2>Our Complete Portfolio</h2>
+        <p>
+          Explore our full catalogue of bespoke residential, commercial, and
+          hospitality transformations crafted with meticulous attention to
+          detail.
+        </p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">
+          All Projects
+        </button>
+        <button class="filter-btn" data-filter="residential">
+          Residential
+        </button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="hospitality">
+          Hospitality
+        </button>
+      </div>
+
+      <!-- Expanded Portfolio Grid -->
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-item" data-category="residential">
+          <img src="img/dining1.webp" alt="Modern Dining Room" />
+          <div class="portfolio-overlay">
+            <span class="category-tag">Residential</span>
+            <h3>The Luxury Dining Room</h3>
+            <a href="project-detail.html" class="portfolio-link"
+              >View Project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-item" data-category="commercial">
+          <img src="img/hepzibah1.webp" alt="Reception Area" />
+          <div class="portfolio-overlay">
+            <span class="category-tag">Commercial</span>
+            <h3>Hepzibah Reception Area</h3>
+            <a href="project-detail.html" class="portfolio-link"
+              >View Project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-item" data-category="hospitality">
+          <img src="img/shortlet1.webp" alt="Shortlet Bedroom" />
+          <div class="portfolio-overlay">
+            <span class="category-tag">Hospitality</span>
+            <h3>Boutique Shortlet Bedroom</h3>
+            <a href="project-detail.html" class="portfolio-link"
+              >View Project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Project 4 (Add more placeholders matching your images) -->
+        <div class="portfolio-item" data-category="residential">
+          <img src="img/img1.jpeg" alt="Villa Living Space" />
+          <div class="portfolio-overlay">
+            <span class="category-tag">Residential</span>
+            <h3>Belgravia Villa Living Area</h3>
+            <a href="project-detail.html" class="portfolio-link"
+              >View Project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="commercial">
+          <img src="img/img2.webp" alt="Executive Office" />
+          <div class="portfolio-overlay">
+            <span class="category-tag">Commercial</span>
+            <h3>Apex Executive Suites</h3>
+            <a href="project-detail.html" class="portfolio-link"
+              >View Project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="hospitality">
+          <img src="img/img3.webp" alt="Lounge Area" />
+          <div class="portfolio-overlay">
+            <span class="category-tag">Hospitality</span>
+            <h3>Sanctuary Lounge Interior</h3>
+            <a href="project-detail.html" class="portfolio-link"
+              >View Project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (Reused from Index) -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <h3 class="footer-logo">Hepzibah Designs</h3>
+          <p>
+            Redefining luxury interiors, architecture, and spatial experiences
+            with timeless elegance and precision.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Residential Design</a></li>
+            <li><a href="services.html">Commercial Interiors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col newsletter-col">
+          <h4>Stay Connected</h4>
+          <p class="footer-contact-info">
+            <i class="fa-solid fa-location-dot"></i> Victoria Island, Lagos,
+            Nigeria
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hepzibah Designs & Interiors. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
