@@ -14,26 +14,19 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-      defer
-    ></script>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon" />
   </head>
   <body>
     <!-- Site Header -->
     <header
-      class="site-header portfolio-internal-header"
-      style="background-color: var(--dark-header-bg); position: relative"
+      class="site-header"
+      style="background-color: var(--dark-bg); position: relative"
     >
       <a href="home.html" class="logo-container">
         <img
-          src="img/logo.png"
+          src="img/logo.webp"
           alt="Hepzibah Designs and Interiors LTD"
           class="logo-img"
         />
@@ -50,32 +43,24 @@
       </nav>
     </header>
 
-    <!-- Main Portfolio Showcase Section -->
-    <section class="featured-portfolio" style="padding-top: 80px">
+    <!-- Portfolio Header & Filter Bar -->
+    <section class="featured-portfolio" style="padding-top: 100px">
       <div class="portfolio-header">
-        <h2>Our Complete Portfolio</h2>
+        <h2>Our Design Portfolio</h2>
         <p>
-          Explore our full catalogue of bespoke residential, commercial, and
-          hospitality transformations crafted with meticulous attention to
-          detail.
+          Explore our curated collection of architectural masterpieces, luxury residential living spaces, and dynamic commercial environments.
         </p>
       </div>
 
       <!-- Filter Bar -->
       <div class="portfolio-filters">
-        <button class="filter-btn active" data-filter="all">
-          All Projects
-        </button>
-        <button class="filter-btn" data-filter="residential">
-          Residential
-        </button>
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
         <button class="filter-btn" data-filter="commercial">Commercial</button>
-        <button class="filter-btn" data-filter="hospitality">
-          Hospitality
-        </button>
+        <button class="filter-btn" data-filter="hospitality">Hospitality</button>
       </div>
 
-      <!-- Expanded Portfolio Grid -->
+      <!-- Portfolio Grid -->
       <div class="portfolio-grid">
         <!-- Project 1 -->
         <div class="portfolio-item" data-category="residential">
@@ -83,8 +68,8 @@
           <div class="portfolio-overlay">
             <span class="category-tag">Residential</span>
             <h3>The Luxury Dining Room</h3>
-            <a href="project-detail.html" class="portfolio-link"
-              >View Project <i class="fa-solid fa-arrow-right"></i
+            <a href="project-detail.html?project=luxury-dining" class="portfolio-link"
+              >View Case Study <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
         </div>
@@ -95,8 +80,8 @@
           <div class="portfolio-overlay">
             <span class="category-tag">Commercial</span>
             <h3>Hepzibah Reception Area</h3>
-            <a href="project-detail.html" class="portfolio-link"
-              >View Project <i class="fa-solid fa-arrow-right"></i
+            <a href="project-detail.html?project=reception-area" class="portfolio-link"
+              >View Case Study <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
         </div>
@@ -107,49 +92,51 @@
           <div class="portfolio-overlay">
             <span class="category-tag">Hospitality</span>
             <h3>Boutique Shortlet Bedroom</h3>
-            <a href="project-detail.html" class="portfolio-link"
-              >View Project <i class="fa-solid fa-arrow-right"></i
+            <a href="project-detail.html?project=shortlet-bedroom" class="portfolio-link"
+              >View Case Study <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
         </div>
 
-        <!-- Project 4 (Add more placeholders matching your images) -->
+        <!-- Project 4 -->
         <div class="portfolio-item" data-category="residential">
           <img src="img/img1.jpeg" alt="Villa Living Space" />
           <div class="portfolio-overlay">
             <span class="category-tag">Residential</span>
             <h3>Belgravia Villa Living Area</h3>
-            <a href="project-detail.html" class="portfolio-link"
-              >View Project <i class="fa-solid fa-arrow-right"></i
+            <a href="project-detail.html?project=belgravia-villa" class="portfolio-link"
+              >View Case Study <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
         </div>
 
+        <!-- Project 5 -->
         <div class="portfolio-item" data-category="commercial">
           <img src="img/img2.webp" alt="Executive Office" />
           <div class="portfolio-overlay">
             <span class="category-tag">Commercial</span>
             <h3>Apex Executive Suites</h3>
-            <a href="project-detail.html" class="portfolio-link"
-              >View Project <i class="fa-solid fa-arrow-right"></i
+            <a href="project-detail.html?project=apex-suites" class="portfolio-link"
+              >View Case Study <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
         </div>
 
+        <!-- Project 6 -->
         <div class="portfolio-item" data-category="hospitality">
           <img src="img/img3.webp" alt="Lounge Area" />
           <div class="portfolio-overlay">
             <span class="category-tag">Hospitality</span>
             <h3>Sanctuary Lounge Interior</h3>
-            <a href="project-detail.html" class="portfolio-link"
-              >View Project <i class="fa-solid fa-arrow-right"></i
+            <a href="project-detail.html?project=sanctuary-lounge" class="portfolio-link"
+              >View Case Study <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer (Reused from Index) -->
+    <!-- Standardized Footer -->
     <footer class="site-footer">
       <div class="footer-container">
         <div class="footer-col brand-col">
@@ -158,7 +145,14 @@
             Redefining luxury interiors, architecture, and spatial experiences
             with timeless elegance and precision.
           </p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/hepzibahinteriors_bukky?stkn=MWI3OGt0ZDR2NzA5aA==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
         </div>
+
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
@@ -169,21 +163,31 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
-          <h4>Services</h4>
+          <h4>Services & Shop</h4>
           <ul>
             <li><a href="services.html">Residential Design</a></li>
             <li><a href="services.html">Commercial Interiors</a></li>
+            <li><a href="shop.html">Living Room Furniture</a></li>
+            <li><a href="shop.html">Marble & Tables</a></li>
+            <li><a href="shop.html">Lighting & Decor</a></li>
           </ul>
         </div>
+
         <div class="footer-col newsletter-col">
           <h4>Stay Connected</h4>
           <p class="footer-contact-info">
-            <i class="fa-solid fa-location-dot"></i> Victoria Island, Lagos,
+            <i class="fa-solid fa-location-dot"></i> Suite 235 Block D2 HFP
+            EASTLINE Shopping complex, Abraham Adesanya bus-stop Ajah, Lagos,
             Nigeria
+          </p>
+          <p class="footer-contact-info">
+            <i class="fa-solid fa-phone"></i> +2349073529060
           </p>
         </div>
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2026 Hepzibah Designs & Interiors. All rights reserved.</p>
       </div>

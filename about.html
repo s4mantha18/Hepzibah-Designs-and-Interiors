@@ -3,48 +3,236 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>About Us | Hepzibah Designs & Interiors</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon" />
   </head>
   <body>
-    <main class="hero-section">
-      
+    <!-- Site Header -->
+    <header
+      class="site-header"
+      style="background-color: var(--dark-bg); position: relative;"
+    >
+      <a href="home.html" class="logo-container">
+        <img
+          src="img/logo.webp"
+          alt="Hepzibah Designs and Interiors LTD"
+          class="logo-img"
+        />
+      </a>
 
-      <header>
-        <a href="home.html" class="logo">
-          <img src="img/logo.png" alt="Hepzibah Designs and Interiors LTD" />
-        </a>
+      <nav class="navbar">
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-        <nav class="navbar">
-          <div class="nav-links">
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="shop.html">Shop</a>
-            <a href="contact.html">Contact</a>
+    <!-- 1. Hero Section -->
+    <section class="about-hero-section">
+      <div class="about-hero-content">
+        <h1>About Hepzibah Designs</h1>
+        <p>Redefining luxury living through timeless architecture, elite craftsmanship, and personalized spatial design.</p>
+      </div>
+    </section>
+
+    <!-- 2. Company Story -->
+    <section class="about-preview">
+      <div class="about-preview-container">
+        <div class="about-preview-text">
+          <h2>Our Story</h2>
+          <p>
+            Founded in Lagos, Nigeria, Hepzibah Designs & Interiors started with a singular vision: to transform ordinary spaces into extraordinary sanctuaries. Over the years, our unwavering dedication to quality, structural elegance, and deep alignment with our clients' lifestyles has positioned us as a premier authority in luxury interior styling and architecture.
+          </p>
+          <p>
+            We believe that every room has a distinct narrative. Our team bridges the gap between sophisticated aesthetics and functional utility, ensuring each environment we craft leaves a lasting legacy of beauty.
+          </p>
+        </div>
+        <div class="about-preview-image-slideshow">
+          <img src="img/slide1.webp" alt="Design Studio Workshop" style="width: 100%; height: 380px; object-fit: cover; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.15);" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 & 4. Mission & Vision Section -->
+    <section class="mission-vision-section">
+      <div class="mission-vision-grid">
+        <div class="mv-card">
+          <i class="fa-solid fa-compass"></i>
+          <h3>Our Mission</h3>
+          <p>To deliver bespoke, high-end architectural and interior solutions that elevate the human experience, combining meticulous precision with unmatched luxury.</p>
+        </div>
+        <div class="mv-card">
+          <i class="fa-solid fa-eye"></i>
+          <h3>Our Vision</h3>
+          <p>To be the foremost global benchmark for African-rooted luxury interior design, celebrated for innovation, elegance, and uncompromised excellence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Core Values Section -->
+    <section class="core-values-section">
+      <div class="values-header">
+        <h2>Our Core Values</h2>
+        <p>The guiding principles that dictate every blueprint, material choice, and client interaction.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-item">
+          <h4>01. Timeless Elegance</h4>
+          <p>Designing spaces that transcend fleeting trends to remain breathtaking across decades.</p>
+        </div>
+        <div class="value-item">
+          <h4>02. Absolute Precision</h4>
+          <p>Meticulous attention given to every measurement, finish, and layout arrangement.</p>
+        </div>
+        <div class="value-item">
+          <h4>03. Client-Centricity</h4>
+          <p>Listening intently to your lifestyle essence to curate environments unique to you.</p>
+        </div>
+        <div class="value-item">
+          <h4>04. Uncompromising Integrity</h4>
+          <p>Transparency, premium sourcing, and elite execution from concept to final reveal.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Meet the Team Section -->
+    <section class="team-section">
+      <div class="team-header">
+        <h2>Meet The Creative Minds</h2>
+        <p>The passionate designers, architects, and stylists bringing your visions to life.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="img/img1.jpeg" alt="Lead Designer" />
+          <div class="team-info">
+            <h3>Bukky Hepzibah</h3>
+            <span>Principal Creative Director</span>
           </div>
+        </div>
+        <div class="team-card">
+          <img src="img/img2.webp" alt="Senior Architect" />
+          <div class="team-info">
+            <h3>Adebayo Wright</h3>
+            <span>Lead Architectural Specialist</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <img src="img/img3.webp" alt="Interior Stylist" />
+          <div class="team-info">
+            <h3>Zainab Aliyu</h3>
+            <span>Senior Spatial Stylist</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <a href="consultation.html" class="btn">Book Consultation</a>
-        </nav>
-      </header>
+    <!-- 7 & 8. Achievements & Awards Section -->
+    <section class="achievements-section">
+      <div class="achievements-container">
+        <div class="achievements-header">
+          <h2>Achievements & Accolades</h2>
+          <p>Recognized for excellence across residential and commercial design sectors.</p>
+        </div>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <i class="fa-solid fa-award"></i>
+            <h3>Best Luxury Interior Firm</h3>
+            <p>West Africa Property Awards (2024)</p>
+          </div>
+          <div class="achievement-card">
+            <i class="fa-solid fa-trophy"></i>
+            <h3>Excellence in Commercial Styling</h3>
+            <p>Lagos Architectural Showcase (2025)</p>
+          </div>
+          <div class="achievement-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Top 25 Design Innovators</h3>
+            <p>Continental Living Magazine (2026)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CTA Section -->
+    <section class="final-cta-section">
+      <div class="cta-content">
+        <h2>Ready to Transform Your Space?</h2>
+        <p>Let's collaborate to bring your luxury interior or commercial vision to life. Schedule your private consultation with our expert design team today.</p>
+        <a href="contact.html" class="btn btn-primary">Book Consultation <i class="fa-solid fa-arrow-right-long fa-float" style="margin-left: 10px"></i></a>
+      </div>
+    </section>
+
+    <!-- Standardized Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <h3 class="footer-logo">Hepzibah Designs</h3>
+          <p>
+            Redefining luxury interiors, architecture, and spatial experiences
+            with timeless elegance and precision.
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/hepzibahinteriors_bukky?stkn=MWI3OGt0ZDR2NzA5aA==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services & Shop</h4>
+          <ul>
+            <li><a href="services.html">Residential Design</a></li>
+            <li><a href="services.html">Commercial Interiors</a></li>
+            <li><a href="shop.html">Living Room Furniture</a></li>
+            <li><a href="shop.html">Marble & Tables</a></li>
+            <li><a href="shop.html">Lighting & Decor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col newsletter-col">
+          <h4>Stay Connected</h4>
+          <p class="footer-contact-info">
+            <i class="fa-solid fa-location-dot"></i> Suite 235 Block D2 HFP
+            EASTLINE Shopping complex, Abraham Adesanya bus-stop Ajah, Lagos,
+            Nigeria
+          </p>
+          <p class="footer-contact-info">
+            <i class="fa-solid fa-phone"></i> +2349073529060
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hepzibah Designs & Interiors. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
